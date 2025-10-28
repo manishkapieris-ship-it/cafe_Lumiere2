@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking - Café Lumière</title>
+  <title>Reserve Your Table | Café Lumière</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" class="logo" alt="Cafe Lumière Logo">
+    <div class="logo">
+      <img src="images/logo.png" alt="Café Lumière Logo">
+      <h1>Café Lumière</h1>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
@@ -17,16 +20,36 @@
     </nav>
   </header>
 
-  <main class="booking">
-    <h1>Book a Table</h1>
-    <form>
-      <label>Name:</label><input type="text" required>
-      <label>Email:</label><input type="email" required>
-      <label>Date:</label><input type="date" required>
-      <label>Time:</label><input type="time" required>
-      <label>Guests:</label><input type="number" min="1" max="10" required>
-      <button type="submit">Reserve Now</button>
-    </form>
+  <main class="booking-section">
+    <h2>Reserve Your Table</h2>
+    <p class="booking-intro">Book a cozy spot and enjoy our delightful coffee and desserts.</p>
+
+    <div class="booking-card">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+          <input type="date" required>
+        </div>
+        <div class="form-group">
+          <input type="time" required>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="">No. of Guests</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4+</option>
+          </select>
+        </div>
+        <button type="submit">Reserve Now</button>
+      </form>
+    </div>
   </main>
 
   <footer>

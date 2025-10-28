@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Cart | Café Lumière</title>
+  <title>Cart | Café Lumière</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Café Lumière Logo">
+      <img src="images/logo.png" alt="Café Lumière Logo" />
       <h1>Café Lumière</h1>
     </div>
     <nav>
@@ -20,16 +22,44 @@
     </nav>
   </header>
 
-  <main class="cart-container">
-    <div class="cart-box">
-      <h2>Your Cart</h2>
-      <p class="empty-msg">Your cart is empty ☕</p>
-      <button onclick="window.location.href='menu.html'" class="menu-btn">Go to Menu</button>
-    </div>
-  </main>
+  <!-- CART SECTION -->
+  <section class="cart-page">
+    <h2>Your Cart</h2>
 
+    <!-- Example order -->
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="images/latte.jpg" alt="Latte" />
+        <div class="item-details">
+          <h3>Latte</h3>
+          <p>Size: Regular</p>
+          <p>Quantity: 2</p>
+        </div>
+        <div class="item-price">$7.60</div>
+      </div>
+
+      <div class="cart-item">
+        <img src="images/croissant.jpg" alt="Croissant" />
+        <div class="item-details">
+          <h3>Croissant</h3>
+          <p>Butter Flaky Delight</p>
+          <p>Quantity: 1</p>
+        </div>
+        <div class="item-price">$2.80</div>
+      </div>
+    </div>
+
+    <!-- Total -->
+    <div class="cart-total">
+      <h3>Total: $10.40</h3>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Café Lumière. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
