@@ -1,0 +1,219 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff6ee;
+  color: #3b2f2f;
+  margin: 0;
+}
+
+header {
+  background-color: #3b1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav a {
+  color: #f9c46b;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  height: 85vh;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.btn {
+  background-color: #f9c46b;
+  color: #3b1f1f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f5a623;
+}
+
+/* Menu */
+.menu-page {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-category h2 {
+  background-color: #f9c46b;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-items .item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-items img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.menu-items button {
+  background-color: #3b1f1f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: 8px;   /* Pushes button to the right */
+  transform: translateY(4px); /* Aligns nicely with price */
+  transition: background 0.2s ease;
+}
+
+.menu-items span {
+  font-weight: 500;
+  color: #3b1f1f;
+  margin-right: 5px;  /* Adds spacing before button */
+}
+
+.menu-items .item p {
+  margin: 10px 0 4px 0;
+}
+
+.menu-items button:hover {
+  background-color: #f9c46b;
+  color: #3b1f1f;
+}
+
+
+.menu-items button:hover {
+  background-color: #f9c46b;
+  color: #3b1f1f;
+}
+
+/* Booking Form */
+.booking form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.booking input,
+.booking button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  background-color: #fff6ef;
+  padding: 40px 20px;
+}
+
+.cart-box {
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 40px 60px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.cart-box:hover {
+  transform: translateY(-5px);
+}
+
+.cart-box h2 {
+  font-size: 2rem;
+  color: #3b1f1f;
+  margin-bottom: 15px;
+}
+
+.cart-box .empty-msg {
+  color: #7b6d6d;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.cart-box .menu-btn {
+  background-color: #f9c46b;
+  border: none;
+  color: #3b1f1f;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cart-box .menu-btn:hover {
+  background-color: #3b1f1f;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Footer refinement */
+footer {
+  background-color: #3b1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 2px solid #f9c46b;
+}
