@@ -29,7 +29,7 @@ nav a.active {
   color: #fff;
 }
 
-/* Hero */
+
 .hero {
   position: relative;
   text-align: center;
@@ -64,7 +64,7 @@ nav a.active {
   background-color: #f5a623;
 }
 
-/* Menu */
+
 .menu-page {
   padding: 40px;
   max-width: 900px;
@@ -207,7 +207,6 @@ nav a.active {
   transform: scale(1.05);
 }
 
-/* Footer refinement */
 footer {
   background-color: #3b1f1f;
   color: #fff;
@@ -216,4 +215,85 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
   border-top: 2px solid #f9c46b;
+}
+
+
+
+@media (max-width: 1024px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .menu-item img {
+    height: 160px;
+  }
+
+  .hero {
+    height: 60vh;
+    background-position: center;
+  }
+
+  header nav a {
+    margin: 0 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    width: 80px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr; /* Stack items */
+  }
+
+  .menu-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .menu-item img {
+    height: 140px;
+    border-radius: 12px;
+  }
+
+  .hero {
+    height: 50vh;
+    background-position: center;
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .cart-container {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
